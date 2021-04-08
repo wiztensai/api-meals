@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/my_nav"
+    app:startDestination="@id/nav_f_Categories">
+
+    <fragment
+        android:id="@+id/nav_f_Categories"
+        android:name="com.jetwiz.admin.ui.F_Categories"
+        android:label="F_Categories" >
+        <action
+            android:id="@+id/action_f_Categories_to_f_Meals"
+            app:destination="@id/nav_f_Meals" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_f_Meals"
+        android:name="com.jetwiz.admin.ui.F_Meals"
+        android:label="F_Meals" >
+        <action
+            android:id="@+id/action_nav_f_Meals_to_f_MealDetail"
+            app:destination="@id/nav_f_MealDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_f_MealDetail"
+        android:name="com.jetwiz.admin.ui.F_MealDetail"
+        android:label="F_MealDetail" />
+</navigation>
